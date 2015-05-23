@@ -44,10 +44,10 @@ mtModel <- lm(mpg ~ hp + wt + cyl, data=dat)
 Now the model can be checked to see if it appropreate and represents the data well.
 
 ```{r}
-summary(mtModel)
+summary(mtModel)$coefficients
 ```
 
-While the model is not very good of a fit due to the variables it is enough to provide customers with some idea of how the main factors affect the performance of their vehicles.
+While the model is not very good of a fit by the variables it is enough to provide customers with some idea of how the main factors affect the performance of their vehicles.
 
 
 ---
@@ -63,3 +63,5 @@ The model is [available online here](http://monkeyfett8.shinyapps.io/project/) a
 ## Using model (cont.)
 
 On the left side of the tool are the 3 input values, cylinders, power, and weight.  These can be adjusted on the fly.  On the right is an output of the registered input values and the predictionoutput from the Fuel Economy model.  This prediction will update in real time with the inputs.
+
+This model will help customers understand how engine size and power, and car weight can affect their fuel economy.  While this data is relatively old it still shows trends that can be applicable to current shopping.
