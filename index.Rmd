@@ -43,7 +43,7 @@ mtModel <- lm(mpg ~ hp + wt + cyl, data=dat)
 
 Now the model can be checked to see if it appropreate and represents the data well.
 
-```{r}
+```{r, size='small'}
 summary(mtModel)$coefficients
 ```
 
